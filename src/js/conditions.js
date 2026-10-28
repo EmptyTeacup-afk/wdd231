@@ -11,6 +11,9 @@ import {
   visitorCenterTemplate
 } from "./templates.mjs";
 import setHeaderFooter from "./setHeaderFooter.mjs";
+import enableNavigation from "./navigation.mjs";
+
+enableNavigation();
 
 function setAlerts(alerts) {
   const alertsContainer = document.querySelector(".alerts > ul");

@@ -3,6 +3,7 @@ import "../css/home.css";
 import { getParkData, getInfoLinks } from "./parkService.mjs";
 import setHeaderFooter from "./setHeaderFooter.mjs";
 import { mediaCardTemplate } from "./templates.mjs";
+import enableNavigation from "./navigation.mjs";
 
 function setParkIntro(data) {
   const introEl = document.querySelector(".intro");
@@ -26,4 +27,5 @@ async function init() {
   setParkInfoLinks(links);
 }
 
+enableNavigation();
 init();
